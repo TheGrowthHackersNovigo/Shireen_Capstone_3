@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Activity mc:Ignorable="sap sap2010" x:Class="CalculatingClientSecurityHash" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
@@ -10,7 +9,7 @@
     <x:Property Name="Details" Type="InOutArgument(x:String)" />
     <x:Property Name="HashCode" Type="InOutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>856,457.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1171,2913</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -48,6 +47,7 @@
       <x:String>System.Net.Mail</x:String>
       <x:String>GlobalVariablesNamespace</x:String>
       <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Linq.Expressions</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -117,27 +117,27 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CalculatingClientSecurityHash" sap:VirtualizedContainerService.HintSize="416,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_18">
+  <Sequence DisplayName="CalculatingClientSecurityHash" sap:VirtualizedContainerService.HintSize="1112,2848" sap2010:WorkflowViewState.IdRef="Sequence_18">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="1050,2874" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Dashboard" sap:VirtualizedContainerService.HintSize="1050,2760" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2632.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,2520" sap2010:WorkflowViewState.IdRef="Sequence_17">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="954,116" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="[in_TransactionItem(&quot;Actions Url&quot;).ToString]" Version="V3" />
-            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="text" DisplayName="Get Attribute 'Client ID:'" sap:VirtualizedContainerService.HintSize="954,242" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[ClientDetails]" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Version="V3">
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="954,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="[in_TransactionItem(&quot;Actions Url&quot;).ToString]" Version="V3" />
+            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="text" DisplayName="Get Attribute 'Client ID:'" sap:VirtualizedContainerService.HintSize="954,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[ClientDetails]" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Version="V3">
               <uix:NGetAttributeGeneric.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/101866540" DesignTimeRectangle="255, 719, 560, 90" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='P' type='' class='' aaname='                              BA92200                              Mayra Monzon                              France                         ' check:innerText='Client ID: BA92200&amp;#xD;&amp;#xA;Client Name: Mayra Monzon&amp;#xD;&amp;#xA;Client Country: France' /&gt;" Guid="cbda7b3e-5103-4ed3-85c0-3df20874fb24" InformativeScreenshot="bba6bceb7d4af9a027d610f468dc750d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -148,7 +148,7 @@
                 </uix:TargetAnchorable>
               </uix:NGetAttributeGeneric.Target>
             </uix:NGetAttributeGeneric>
-            <Assign sap:VirtualizedContainerService.HintSize="954,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_6">
+            <Assign sap:VirtualizedContainerService.HintSize="954,114" sap2010:WorkflowViewState.IdRef="Assign_6">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[ClientId]</OutArgument>
               </Assign.To>
@@ -156,7 +156,7 @@
                 <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(ClientDetails,"(?&lt;=Client\s*ID:\s)(\w+)(?=\s)").Value.Trim]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="954,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_7">
+            <Assign sap:VirtualizedContainerService.HintSize="954,114" sap2010:WorkflowViewState.IdRef="Assign_7">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[ClientName]</OutArgument>
               </Assign.To>
@@ -164,7 +164,7 @@
                 <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(ClientDetails,"(?&lt;=Client\s*Name:\s)(\w+\s*\w*)(?=\s)").Value.Trim]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="954,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_8">
+            <Assign sap:VirtualizedContainerService.HintSize="954,114" sap2010:WorkflowViewState.IdRef="Assign_8">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[ClientCountry]</OutArgument>
               </Assign.To>
@@ -172,7 +172,7 @@
                 <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(ClientDetails,"(?&lt;=Client\s*Country:\s)(\w+\s*\w*)(?=\s)").Value.Trim]</InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="954,116.66666666666667" sap2010:WorkflowViewState.IdRef="Assign_9">
+            <Assign sap:VirtualizedContainerService.HintSize="954,114" sap2010:WorkflowViewState.IdRef="Assign_9">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[Details]</OutArgument>
               </Assign.To>
@@ -180,16 +180,16 @@
                 <InArgument x:TypeArguments="x:String">[ClientId+"-"+ClientName+"-"+ClientCountry]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HashGenerator - Invoke Workflow File (HashGenerator.xaml)" sap:VirtualizedContainerService.HintSize="954,208" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Workflow\HashGenerator.xaml">
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="HashGenerator - Invoke Workflow File (HashGenerator.xaml)" sap:VirtualizedContainerService.HintSize="954,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Workflow\HashGenerator.xaml">
               <ui:InvokeWorkflowFile.Arguments>
                 <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
                 <InArgument x:TypeArguments="x:String" x:Key="Details">[Details]</InArgument>
                 <OutArgument x:TypeArguments="x:String" x:Key="HashCode">[HashCode]</OutArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
-            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="954,116" sap2010:WorkflowViewState.IdRef="NGoToUrl_5" Url="[&quot;https://acme-test.uipath.com/work-items/update/&quot;+in_TransactionItem(&quot;WIID&quot;).ToString]" Version="V3" />
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,178" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Client details extracted&quot;]" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Add Comments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,289.3333333333333" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Text="[HashCode]" Version="V3">
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="954,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_5" Url="[in_Config(&quot;WorkUpdate&quot;).ToString+in_TransactionItem(&quot;WIID&quot;).ToString]" Version="V3" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Level="Info" Message="[&quot;Client details extracted&quot;]" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Add Comments'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Text="[HashCode]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/101866540" CVScreenId="4acba2b7-fe6b-4804-81b6-f4bb4621afc5" CvElementArea="77, 517, 528, 84" CvType="InputBox" DesignTimeRectangle="80, 519, 525, 80" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='newComment' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='newComment' tag='TEXTAREA' type='text' class='form-control' aaname='' /&gt;" Guid="8b04a516-ddf4-4b8a-bdc3-7bc844dcc96b" InformativeScreenshot="2cf029acd44be91c117acde00ea27c51.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='WI-Update' title='ACME System 1' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -199,18 +199,8 @@
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
-              <uix:NTypeInto.VerifyOptions>
-                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionTypeIntoOptions.Retry>
-                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                </uix:VerifyExecutionTypeIntoOptions>
-              </uix:NTypeInto.VerifyOptions>
             </uix:NTypeInto>
-            <uix:NSelectItem DisplayName="Select Item '---'" sap:VirtualizedContainerService.HintSize="954,190.66666666666666" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Completed" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item '---'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Completed" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="4">
                   <x:String>---</x:String>
@@ -229,40 +219,30 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Update Work Item'" sap:VirtualizedContainerService.HintSize="954,228" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Update Work Item'" sap:VirtualizedContainerService.HintSize="954,189" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://acme-test.uipath.com/work-items/101866540" CVScreenId="4acba2b7-fe6b-4804-81b6-f4bb4621afc5" CvElementArea="76, 728, 238, 55" CvTextArea="124, 745, 170, 24" CvTextArgument="Update Work Item" CvType="Button" DesignTimeRectangle="80, 731, 233, 50" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl id='buttonUpdate' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='buttonUpdate' tag='BUTTON' type='button' class='btn btn-default' aaname=' Update Work Item' check:innerText='Update Work Item' /&gt;" Guid="1e9221e4-6ba9-469b-9352-7735be34461e" InformativeScreenshot="fa458e8a3748f10e5fcde3ec0311873d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='WI-Update' title='ACME System 1' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'acme-test.uipath.com sa…'" sap:VirtualizedContainerService.HintSize="954,507.3333333333333" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Timeout="5" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'acme-test.uipath.com sa…'" sap:VirtualizedContainerService.HintSize="954,500" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="94c2ac86-5ce1-4342-a70f-8382b06dbe07" Timeout="[Convert.ToDouble(in_Config(&quot;TimeOut&quot;))]" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,262" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_15">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,171.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[in_TransactionItem(&quot;WIID&quot;).ToString+&quot; Updated successfully&quot;]" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,168" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[in_TransactionItem(&quot;WIID&quot;).ToString+&quot; Updated successfully&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,207.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="Sequence_16">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Throw Exception="[new  BusinessRuleException(in_TransactionItem(&quot;WIID&quot;).ToString+&quot; not updated&quot;)]" sap:VirtualizedContainerService.HintSize="388,116.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                  <Throw Exception="[new  BusinessRuleException(in_TransactionItem(&quot;WIID&quot;).ToString+&quot; not updated&quot;)]" sap:VirtualizedContainerService.HintSize="388,115" sap2010:WorkflowViewState.IdRef="Throw_2" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>

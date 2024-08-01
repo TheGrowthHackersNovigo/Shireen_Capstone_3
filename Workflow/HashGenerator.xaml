@@ -4,7 +4,7 @@
     <x:Property Name="Details" Type="InArgument(x:String)" />
     <x:Property Name="HashCode" Type="OutArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>856,1263.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1171,1268</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -111,26 +111,26 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="HashGenerator" sap:VirtualizedContainerService.HintSize="512,1198.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_14">
+  <Sequence DisplayName="HashGenerator" sap:VirtualizedContainerService.HintSize="512,1203" sap2010:WorkflowViewState.IdRef="Sequence_14">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: SHA1 online" sap:VirtualizedContainerService.HintSize="450,1110.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="f5ca6b28-a878-4362-b110-1b421b0b2383" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: SHA1 online" sap:VirtualizedContainerService.HintSize="450,1115" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="f5ca6b28-a878-4362-b110-1b421b0b2383" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,868.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_13">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,875" sap2010:WorkflowViewState.IdRef="Sequence_13">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT textToHashId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,254.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f5ca6b28-a878-4362-b110-1b421b0b2383" Text="[Details]" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT textToHashId'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="f5ca6b28-a878-4362-b110-1b421b0b2383" Text="[Details]" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://www.sha1-online.com/" CVScreenId="0b99d38d-ccb4-4a0d-ade8-9df1c05e7106" CvElementArea="688, 487, 498, 33" CvType="InputBox" DesignTimeRectangle="686, 488, 499, 32" DesignTimeScaleFactor="1.5" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='textToHashId' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='textToHashId' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="ec98ab2a-a690-4fbb-8bbb-00c635a91dcf" InformativeScreenshot="732076fee309b7fd35a5b6bf446d21dd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -141,7 +141,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'hash'" sap:VirtualizedContainerService.HintSize="354,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f5ca6b28-a878-4362-b110-1b421b0b2383" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'hash'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f5ca6b28-a878-4362-b110-1b421b0b2383" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="http://www.sha1-online.com/" CVScreenId="7b46d41b-52cc-4b12-b793-6d9980145553" CvElementArea="1183, 487, 73, 33" CvTextArea="1196, 492, 48, 19" CvTextArgument="hash" CvType="Button" DesignTimeRectangle="1185, 488, 71, 32" DesignTimeScaleFactor="1.5" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='' aaname='hash' check:text='hash' /&gt;" Guid="1c7d87d3-76da-4b83-9874-dc1f2ffd7260" InformativeScreenshot="022e52b9f044f49cdf1f8f802e96ec7f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -151,26 +151,16 @@
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
             </uix:NClick>
-            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="text" DisplayName="Get Attribute '0fdc66ede34425f43e5ebe0…'" sap:VirtualizedContainerService.HintSize="354,243.33333333333334" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_3" Result="[HashCode]" ScopeIdentifier="f5ca6b28-a878-4362-b110-1b421b0b2383" Version="V3">
+            <uix:NGetAttributeGeneric x:TypeArguments="x:String" Attribute="text" DisplayName="Get Attribute '0fdc66ede34425f43e5ebe0…'" sap:VirtualizedContainerService.HintSize="354,239" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_3" Result="[HashCode]" ScopeIdentifier="f5ca6b28-a878-4362-b110-1b421b0b2383" Version="V3">
               <uix:NGetAttributeGeneric.Target>
                 <uix:TargetAnchorable BrowserURL="http://www.sha1-online.com/" CVScreenId="5ea8a1ae-734d-4119-bae1-251d74f77bca" CvTextArea="651, 720, 706, 28" CvTextArgument="Ofdc66ede34425f43e5ebe0eb2c1556d2bdc501a" CvType="Text" DesignTimeRectangle="651, 717, 715, 33" DesignTimeScaleFactor="1.5" ElementType="Text" FullSelectorArgument="&lt;webctrl id='result-sha1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl id='result-sha1' tag='SPAN' type='' class='' aaname='0fdc66ede34425f43e5ebe0eb2c1556d2bdc501a' check:innerText='0fdc66ede34425f43e5ebe0eb2c1556d2bdc501a' /&gt;" Guid="ba3fdf9d-b47b-42e3-9ec3-ef5fa957b320" InformativeScreenshot="57279bc2c356dd72b4c22bed096405fb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA1 online' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NGetAttributeGeneric.Target>
             </uix:NGetAttributeGeneric>
-            <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="354,50.666666666666664" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V3">
+            <uix:NNavigateBrowser DisplayName="Navigate Browser - Go Back" sap:VirtualizedContainerService.HintSize="354,107" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_2" Version="V3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
